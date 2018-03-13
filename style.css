@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #445;
+  color: #efefef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway';
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Raleway';
+}
+
+.all-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.header-container {
+  margin: 0 0 75px;
+  width: 66%;
+}
+
+.header {
+  margin: 0 0 50px;
+}
+
+.location {
+  animation: location 3000ms infinite;
+  font-size: 3rem;
+  height: 60px;
+}
+
+@keyframes location {
+  0% {font-size: 3rem;}
+  50% {font-size: 2.9rem;}
+  100% {font-size: 3rem;}
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+
+.temp-container {
+  animation: temp-container 6000ms infinite;
+  justify-content: center;
+  display: flex;
+}
+
+@keyframes temp-container {
+  0% {transform: translateX(0px)}
+  50% {transform: translateX(15px)}
+  100% {transform: translateX(0px)}
+}
+
+.symbol {
+  width: 150px;
+}
+
+.fORc {
+  color: #46A2EB;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: 1000ms;
+}
+
+.animate-change {
+  animation: temp-change;
+  animation-duration: 500ms;
+}
+
+@keyframes temp-change {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
